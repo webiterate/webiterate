@@ -231,7 +231,7 @@ async function generateComponent({ name, memo }) {
 
 /**
  * Test the container generator and rollback when successful
- * @param {string} name - Container name
+ * @param {string} name - ContentWrapper name
  * @param {string} type - Plop Action type
  * @returns {Promise<string>} - Relative path to the generated container
  */
@@ -377,7 +377,7 @@ async function generateLanguage(language) {
   await generateComponents([
     { kind: 'component', name: 'Component', memo: false },
     { kind: 'component', name: 'MemoizedComponent', memo: true },
-    { kind: 'container', name: 'Container', memo: false },
+    { kind: 'container', name: 'ContentWrapper', memo: false },
     { kind: 'container', name: 'MemoizedContainer', memo: true },
   ]).catch(reason => reportErrors(reason));
 
