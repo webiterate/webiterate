@@ -1,5 +1,5 @@
 /**
- * Container Generator
+ * ContentWrapper Generator
  */
 
 const componentExists = require('../utils/componentExists');
