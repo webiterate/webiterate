@@ -9,6 +9,17 @@
  * export const YOUR_ACTION_CONSTANT = 'yourproject/YourContainer/YOUR_ACTION_CONSTANT';
  */
 
+// Import images
+import logoNoTextImage from '../../../assets/wiki/logo-no-text.svg';
+import logoOnlyTextImage from '../../../assets/wiki/logo-only-text.svg';
+import logoWithTextImage from '../../../assets/wiki/logo-with-text.svg';
+
+// Export image variables
+export const logoNoText = logoNoTextImage;
+export const logoOnlyText = logoOnlyTextImage;
+export const logoWithText = logoWithTextImage;
+
+//
 export const LOAD_REPOS = 'boilerplate/App/LOAD_REPOS';
 export const LOAD_REPOS_SUCCESS = 'boilerplate/App/LOAD_REPOS_SUCCESS';
 export const LOAD_REPOS_ERROR = 'boilerplate/App/LOAD_REPOS_ERROR';
