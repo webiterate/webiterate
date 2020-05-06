@@ -2,7 +2,7 @@
 layout: page
 title: Thanks
 permalink: /thanks
-nav_order: 4
+nav_order: 5
 ---
 # Our Vote of Thanks
 We would not have been able to build any of this without the following tools and platforms, our thanks go out to their contributor communities and associated components.
