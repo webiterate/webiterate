@@ -4,6 +4,7 @@
 
 layout: home
 title: Home
+permalink: /
 ---
 
 # A home for the future of the web

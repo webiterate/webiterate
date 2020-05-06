@@ -1,0 +1,32 @@
+---
+layout: null
+permalink: /api/v1/pages.json
+name: Pages
+description: Access to all the pages on this wiki
+get: true
+post: false
+put: false
+delete: false
+---
+
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "{{ site.title }}",
+  "home_page_url": "{{ site.url }}",
+  "feed_url": "{{ site.url }}/feed.json",
+  "description": "{{ site.description }}",
+  "author": {
+    "name": "{{ site.github_username }}",
+    "url": "https://hippyhood.github.io/",
+    "avatar": ""
+  },
+  "items": [{% for page in site.html_pages %}
+    {
+      "id": "{{ site.url }}{{ page.url }}",
+      "url": "{{ site.url }}{{ page.url }}",{% if page.url %}
+      "external_url": "{{ page.url }}",{% endif %}
+      "title": {{ page.title | jsonify }},
+      "content_html": {{ page.content | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
