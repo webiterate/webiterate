@@ -11,9 +11,9 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
-
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+
 import makeSelectExperimentsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -28,6 +28,10 @@ export function ExperimentsPage() {
       <Helmet>
         <title>ExperimentsPage</title>
         <meta name="description" content="Description of ExperimentsPage" />
+        <meta
+          name="monetization"
+          content="$pay.stronghold.co/1a12aee8ba62131431d9a39cf3caac44269"
+        />
       </Helmet>
       <FormattedMessage {...messages.header} />
     </div>
