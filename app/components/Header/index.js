@@ -8,34 +8,32 @@ import {
   Nav,
   NavItem,
   NavLink,
-  NavbarText,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
 } from 'reactstrap';
-
+import { NavBarWrapper } from './navBar-styles';
 import messages from './messages';
+import { primary } from '../../styles/helpers/variables';
+import { logoOnlyText } from '../../containers/App/constants';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Webiterate</NavbarBrand>
+    <NavBarWrapper>
+      <Navbar color={`${primary}`} expand="md">
+        <NavbarBrand href="/">
+          <img src={logoOnlyText} alt="Webiterate" />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
               <NavLink href="/home">
                 <FormattedMessage {...messages.home} />
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/home">
-                <FormattedMessage {...messages.mission} />
               </NavLink>
             </NavItem>
             <NavItem>
@@ -55,10 +53,9 @@ function Header() {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
-    </div>
+    </NavBarWrapper>
   );
 }
 
