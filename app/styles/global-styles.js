@@ -1,10 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
+import { secondary } from './helpers/variables';
 
 const GlobalStyle = createGlobalStyle`
   html,
   body {
     height: 100%;
     width: 100%;
+    color: ${secondary};
   }
 
   body {

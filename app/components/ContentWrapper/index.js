@@ -6,7 +6,7 @@ import { bodyBg } from 'styles/helpers/variables';
 const ContentWrapper = styled(Container)`
   min-height: calc(100vh - 56px);
   background: ${bodyBg};
-  margin: 0 auto;
+  margin: 56px 0 auto;
   padding: 0;
 
   ${breakpoints.large`

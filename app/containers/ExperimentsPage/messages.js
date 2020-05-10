@@ -11,6 +11,7 @@ export const scope = 'app.containers.ExperimentsPage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'This is the ExperimentsPage container!',
+    defaultMessage:
+      'This is the ExperimentsPage container! \n new line of text, heelo there',
   },
 });
