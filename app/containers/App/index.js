@@ -14,6 +14,9 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import ExperimentsPage from 'containers/ExperimentsPage/Loadable';
+import BlogPost from 'containers/Experiments/BlogPost/Loadable';
+import MojiPay from 'containers/Experiments/MojiPay/Loadable';
+
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 
@@ -40,6 +43,8 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/experiments" component={ExperimentsPage} />
+          <Route exact path="/experiment/blog_post" component={BlogPost} />
+          <Route exact path="/experiment/moji_pay" component={MojiPay} />
           <Route path="" component={NotFoundPage} />
         </Switch>
       </ContentWrapper>

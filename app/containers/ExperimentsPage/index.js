@@ -5,19 +5,21 @@
  */
 
 import React, { memo } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 import { createStructuredSelector } from 'reselect';
 import { compose } from 'redux';
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import IntroBanner from './components/introBanner';
+import ExperimentsList from './components/experimentsList';
 
 import makeSelectExperimentsPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import messages from './messages';
+// import messages from './messages';
 
 export function ExperimentsPage() {
   useInjectReducer({ key: 'experimentsPage', reducer });
@@ -33,14 +35,20 @@ export function ExperimentsPage() {
           content="$pay.stronghold.co/1a12aee8ba62131431d9a39cf3caac44269"
         />
       </Helmet>
-      <FormattedMessage {...messages.header} />
+      {/*
+      TO DO:
+      - experimentsList should be show cased as a card and linked to
+      - create placeholder experiment
+      */}
+      <IntroBanner />
+      <ExperimentsList />
     </div>
   );
 }
 
-ExperimentsPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-};
+// ExperimentsPage.propTypes = {
+//   dispatch: PropTypes.func.isRequired,
+// };
 
 const mapStateToProps = createStructuredSelector({
   experimentsPage: makeSelectExperimentsPage(),
