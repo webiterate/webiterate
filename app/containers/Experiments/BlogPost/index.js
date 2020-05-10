@@ -107,9 +107,9 @@ export function BlogPost() {
         In this section {"we'll"} review the underpinning technologies that will
         be used to build GitPortfolio. It should be noted that while the tools
         explored in this post detail Github-specific offerings, the same can be
-        achieved with alternative platforms (e.g.
-        <Link href="https://www.netlifycms.org/">NetlifyCMS</Link> +
-        <Link href="https://circleci.com/">CircleCI</Link> +
+        achieved with alternative platforms (e.g.{' '}
+        <Link href="https://www.netlifycms.org/">NetlifyCMS</Link> +{' '}
+        <Link href="https://circleci.com/">CircleCI</Link> +{' '}
         <Link href="https://nodejs.org/en/about/">Scripting</Link>. This article
         is largely focussed on solution speed and sacrificed exploration for
         exploitation to minimise lead-time.
@@ -119,28 +119,28 @@ export function BlogPost() {
 
       <Content>
         <Link href="https://pages.github.com/">Github Pages</Link> is a static
-        site hosting service that allows for the building and publishing of
+        site hosting service that allows for the building and publishing of{' '}
         <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML">
           HTML
         </Link>
-        ,
+        ,{' '}
         <Link href="https://developer.mozilla.org/en-US/docs/Glossary/CSS">
           CSS
-        </Link>
-        and
+        </Link>{' '}
+        and{' '}
         <Link href="https://developer.mozilla.org/en-US/docs/Glossary/JavaScript">
           JavaScript
-        </Link>
-        files from a
+        </Link>{' '}
+        files from a{' '}
         <Link href="https://www.howtogeek.com/180167/htg-explains-what-is-github-and-what-do-geeks-use-it-for/">
           Github
-        </Link>
+        </Link>{' '}
         repository. It offers quick, reliable and consistent website publishing
         and lowers the barrier to entry for development of the same. For an
-        in-depth and digestible overview of the same please take this quick
+        in-depth and digestible overview of the same please take this quick{' '}
         <Link href="https://lab.github.com/githubtraining/github-pages">
           GitHub Pages course
-        </Link>
+        </Link>{' '}
         on {"Github's"} Learning Lab.
       </Content>
 
@@ -149,13 +149,13 @@ export function BlogPost() {
       <Content>
         <Link href="https://developer.github.com/webhooks/">
           Github Webhooks
-        </Link>
+        </Link>{' '}
         are a HTTP-based, event subscription mechanism offered by Github to
         developers who might want to integrate with {"Github's"} platform.
-        Developer integration tasks might include performing
+        Developer integration tasks might include performing{' '}
         <Link href="https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth">
           OAuth
-        </Link>
+        </Link>{' '}
         or alerting an application to the state of a repository. Ever signed in
         or registered to an online service through your social media platform of
         choice? Those are webhooks in action.
@@ -164,11 +164,11 @@ export function BlogPost() {
       <Subtitle>Github Actions</Subtitle>
 
       <Content>
-        <Link href="https://github.com/features/actions">Github Actions</Link>
-        are an approach to creating
+        <Link href="https://github.com/features/actions">Github Actions</Link>{' '}
+        are an approach to creating{' '}
         <Link href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment">
           Continuous Integration / Continuous Delivery
-        </Link>
+        </Link>{' '}
         pipelines on Github. These pipelines/workflows allow developers to
         quickly integrate and deploy their developed code to end-users.
       </Content>
@@ -178,7 +178,7 @@ export function BlogPost() {
       <Content>
         <Link href="https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/">
           Github Templates
-        </Link>
+        </Link>{' '}
         are a quick and robust way of sharing repetitive code across
         repositories. It allows users to share entire files and folders between
         different projects that rely on the same content and structure,
@@ -240,8 +240,6 @@ export function BlogPost() {
       >
         {codeStrings.resumeAction.value}
       </SyntaxHighlighter>
-
-      <Subtitle>To Be Continued</Subtitle>
     </ExperimentPageWrapper>
   );
 }
