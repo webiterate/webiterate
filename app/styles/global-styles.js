@@ -2,6 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import { secondary } from './helpers/variables';
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2');
+  @import url('https://fonts.googleapis.com/css2?family=Overlock');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans');
   html,
   body {
     height: 100%;
